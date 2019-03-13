@@ -1,0 +1,336 @@
+/*共用类*/
+:root {
+	/*menuBar-borderType*/
+	--borderType: 0.01rem solid rgba(150, 150, 150, 0.3);
+	/*menuBar-borderR*/
+	--borderR: 0.1rem;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+.titleText {
+	font-size: 0.3rem;
+	font-weight: 700;
+	color: rgb(96, 96, 96);
+}
+
+.textBox {
+	max-width: 100%;
+}
+
+.textBox > div {
+	margin-bottom: 0.2rem;
+}
+
+.textBox > .title {
+	font-size: 0.3rem;
+	color: #333333;
+}
+
+.textBox > .text {
+	overflow: initial;
+	white-space: initial;
+	text-overflow: initial;
+	font-size: 0.24rem;
+}
+
+.textBox > .price > span {
+	font-size: 0.3rem;
+}
+
+/*主体布局*/
+.content > div:nth-child(2) {
+	background: rgb(226, 226, 226);
+}
+
+.content > div:nth-child(2) > div {
+	margin-bottom: 0.15rem;
+	background: #FFFFFF;
+}
+
+.content > div:nth-child(2) > div:last-child {
+	margin: 0;
+}
+
+.content > div:nth-child(2) {
+	background: rgb(230, 230, 230);
+}
+
+.cartMenu {
+	background: #ffffff;
+	box-shadow: 0 -11px 27px rgba(0, 0, 0, .08);
+	border-top: 0.01rem solid rgba(150, 150, 150, 0.2);
+}
+
+.buyBtn {
+	color: #ffffff;
+}
+
+/*顶部菜单条*/
+.menuBar {
+	z-index: 999;
+	padding: 0.15rem 0.15rem 0.2rem;
+	position: fixed;
+	z-index: 1;
+	width: calc(100% - 0.3rem);
+	display: flex;
+	background: rgb(242, 242, 242);
+	box-shadow: 0 0.1rem 0.26rem rgba(0, 0, 0, .12);
+}
+
+.menuBar > div {
+	flex-grow: 1;
+	padding: 0.12rem 0;
+	text-align: center;
+	border-top: var(--borderType);
+	border-bottom: var(--borderType);
+	border-left: var(--borderType);
+}
+
+.menuBar > div:nth-child(1) {
+	border-top-left-radius: var(--borderR);
+	border-bottom-left-radius: var(--borderR);
+	border: var(--borderType);
+}
+
+.menuBar > div:nth-child(2) {
+	border-left: 0;
+}
+
+.menuBar > div:last-child {
+	border-top-right-radius: var(--borderR);
+	border-bottom-right-radius: var(--borderR);
+	border-right: var(--borderType);
+}
+
+
+/*选中状态*/
+.menuBar > .active {
+	color: #eeeeee;
+	background: linear-gradient(#aeaeae, #b3b3b3);
+}
+
+/*图片区域*/
+.img-box {
+	margin-top: 1rem;
+	z-index: 0;
+}
+
+.img-box .imgBox-slide {
+	width: 100%;
+	padding-top: 80%;
+	background-size: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*商品信息区域*/
+.titleTop {
+	padding: 0.2rem 0.3rem;
+	border-bottom: var(--borderType);
+}
+
+
+/*选择版本*/
+.selectType {
+	padding: 0.2rem 0.3rem;
+}
+
+.selectType > div {
+	margin-bottom: 0.15rem;
+}
+
+.selectType > div:first-child {
+	font-size: 0.26rem;
+	font-weight: 700;
+	color: rgb(153, 153, 153);
+	
+}
+
+.selectType .wTitle {
+	font-size: 0.26rem;
+	font-weight: 500;
+	color: #000000;
+}
+
+.selectType .cTitle {
+	font-size: 0.26rem;
+	font-weight: 700;
+	color: #333333;
+}
+
+.typeTextBox {
+	display: flex;
+	align-items: center;
+}
+
+.typeTextBox > div:first-child {
+	flex-grow: 1;
+	height: 100%;
+}
+
+.typeTextBox > div:last-child {
+	width: 0.3rem;
+	height: 0.3rem;
+}
+
+.typeTextBox > div:first-child > div {
+	margin-bottom: 0.1rem;
+}
+
+.typeTextBox > div:last-child > img {
+	height: 100%;
+}
+
+/*加入购物车按钮*/
+.cartMenu {
+	display: flex;
+	font-size: 0.3rem;
+	color: #333333;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+}
+
+.cartMenu > div > a {
+	height: 100%;
+	display: block;
+	position: relative;
+}
+
+.cart-bubble {
+	content: "";
+	width: 0.3rem;
+	height: 0.3rem;
+	top: -0.12rem;
+	right: 0.2rem;
+	border-radius: 100%;
+	border: 1px solid rgba(3, 3, 3, .04);
+	position: absolute;
+	background: rgb(290, 79, 70);
+	color: #ffffff;
+	text-align: center;
+	line-height: 0.3rem;
+	font-weight: 700;
+	font-size: 0.2rem;
+}
+
+.cartMenu > div:first-child > a {
+	width: 0.5rem;
+	padding: 0 0.3rem;
+}
+
+.cartMenu > div:first-child > a > img {
+	width: 100%;
+}
+
+.cartMenu > div:nth-child(n+2) {
+	height: 0.75rem;
+	margin-left: 0.3rem;
+	flex-grow: 1;
+	border-radius: 0.1rem;
+	line-height: 0.75rem;
+	font-weight: 700;
+	border: var(--borderType);
+}
+
+.cartMenu > div:nth-child(2) {
+	background: linear-gradient(#fff, #fcfcfc);
+	color: rgb(140, 140, 140);
+}
+
+.cartMenu > div:nth-child(3) {
+	margin-right: 0.3rem;
+	background: linear-gradient(rgb(110, 152, 244), rgb(75, 119, 238));
+}
+
+.cartMenu > div:nth-child(3) > a {
+	color: #ffffff;
+}
+
+/*属性版本选择菜单*/
+
+.typeMenu {
+	height: 7rem;
+	position: fixed;
+	z-index: 2;
+	bottom: 1rem;
+	width: 100%;
+	display: none;
+	background: #ffffff;
+}
+
+.typeMenu > div:first-child {
+	height: 2.4rem;
+	position: relative;
+	padding-top: 0.2rem;
+	background: linear-gradient(#fefefe, #f6f6f6);
+	box-shadow: 0 0.05rem 0.13rem rgba(0, 0, 0, .12);
+}
+
+.typeMenu > div:first-child > div:first-child {
+	width: 2.4rem;
+	height: 2.4rem;
+	position: absolute;
+	top: -0.3rem;
+	left: 0.3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.1rem;
+	background: #ffffff;
+	border: var(--borderType);
+}
+
+.typeMenu > div:first-child > div > img {
+	width: 80%;
+}
+
+.typeMenu > div > .textBox {
+	margin-left: 40%;
+}
+
+.typeMenu .text {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.typeMenu > div:last-child {
+
+}
+
+.typeMenuWrapper {
+	height: 4.4rem;
+	overflow: scroll;
+}
+
+.typeMenu .titleTop {
+	margin-top: 0.1rem;
+}
+
+/*属性选择btn*/
+.check {
+	border: 0.01rem solid rgb(106, 143, 230) !important;
+	font-weight: 700 !important;
+	color: #666666 !important;
+}
+
+.typeMenuBox {
+	padding: 0.2rem 0.3rem 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.typeMenuBox .typeMenuText {
+	border-radius: 0.1rem;
+	text-align: center;
+	line-height: 0.25rem;
+	font-size: 0.25rem;
+	color: rgb(102, 102, 102);
+	padding: 0.25rem 0.3rem;
+	margin: 0 0.15rem 0.15rem;
+	border: var(--borderType);
+}

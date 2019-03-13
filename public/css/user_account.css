@@ -1,0 +1,11 @@
+.top>a>div:last-child{
+    width: 0.35rem!important;
+}
+.logoutBtn{
+    background-image: linear-gradient(#e87067,#df5249);
+    font-size: 0.3rem;
+    font-weight: 700;
+    border-radius: 0.1rem;
+    text-align: center;
+    color: #eeeeee;
+}

@@ -1,0 +1,55 @@
+.inputBox {
+	padding: 0;
+	margin: 0 0.3rem 0.3rem !important;
+	box-shadow: inset 0 0.05rem 0.1rem rgba(0, 0, 0, .02), inset 0 0.5rem 8px rgba(0, 0, 0, .15), inset 0 0 0 0.05rem rgba(0, 0, 0, .1), 0 0.05rem 0.05rem 0 hsla(0, 0%, 100%, .1);
+}
+
+.inputBox:nth-child(1) {
+	margin-top: 0.3rem !important;
+}
+
+.inputBox > input {
+	font-size: 0.25rem;
+	border-bottom: 0.01rem solid rgba(150, 150, 150, 0.3);
+}
+
+.inputBox:nth-child(3) {
+	display: flex;
+	background: #FFFFFF;
+	box-shadow: none;
+}
+
+.inputBox > .form-inline {
+	flex-grow: 1;
+}
+
+.inputBox > .form-inline > div {
+
+}
+
+.inputBox .form-group {
+	display: flex;
+}
+
+.inputBox select {
+	flex-grow: 1;
+	padding: 0.2rem;
+	font-size: 0.26rem;
+	border: 0;
+	outline-style: none;
+	-webkit-appearance: none;
+}
+
+.inputBox option {
+	width: 100%;
+	font-size: 0.15rem;
+	padding: 0;
+}
+.textBar{
+	padding: 0.3rem;
+	font-size: 0.3rem;
+	font-weight: 700;
+	background: linear-gradient(#6e98f4,#4b77ee);
+	border-radius: 0.1rem;
+	text-align: center;
+}

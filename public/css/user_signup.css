@@ -1,0 +1,74 @@
+.content > * {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.content {
+    width: calc(100% - 0.6rem);
+    padding: 0.3rem;
+    background: rgb(236, 236, 236);
+}
+
+.inputBox {
+    margin-bottom: 0.15rem;
+}
+
+.inputBox > div {
+    display: flex;
+}
+
+.inputBox > div > span {
+    width: 1rem;
+    font-size: 0.3rem;
+    color: #333333;
+    background: #ffffff;
+    text-align: center;
+    line-height: 0.94rem;
+}
+
+.inputBox > div > input {
+    flex-grow: 1;
+}
+
+/**/
+.inputBox:nth-child(2) {
+    border: 0;
+}
+
+.inputBox:nth-child(2) input:nth-child(1) {
+    width: auto;
+    border-radius: 0.15rem;
+    border: 0.01rem solid rgba(0, 0, 0, 0.2);
+    flex-grow: 1;
+}
+
+.inputBox:nth-child(2) [type=button] {
+    border: 0.01rem solid rgba(0, 0, 0, 0.2);
+    height: 100%;
+    background-image: linear-gradient(rgb(252, 252, 252), rgb(247, 247, 247));;
+    margin-left: 0.2rem;
+    border-radius: 0.15rem;
+    color: rgb(136, 136, 136);
+    cursor: pointer;
+}
+
+/*条款*/
+.text{
+    width: 100%;
+}
+.text>span {
+    font-size: 0.3rem;
+    color: rgb(153,153,153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem 0;
+}
+.text>span>span:first-child{
+    margin-right: 0.2rem;
+}
+.textBottom{
+    margin-top: 0.5rem!important;
+    text-align: center;
+    font-size: 0.25rem;
+    color: rgb(153,153,153);
+}

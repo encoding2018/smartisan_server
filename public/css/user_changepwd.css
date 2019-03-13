@@ -1,0 +1,41 @@
+.content {
+    width: calc(100% - 0.4rem);
+    padding: 0.2rem;
+}
+
+.inputBox:nth-child(2) {
+    background: rgb(226, 226, 226);
+    border: 0;
+}
+
+.inputBox:nth-child(2) > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputBox:nth-child(2) > div > * {
+    border-radius: 0.15rem;
+    border: 0.01rem solid rgba(0, 0, 0, 0.2);
+}
+
+.inputBox:nth-child(2) > div > *:nth-child(1) {
+    flex-grow: 1;
+}
+
+.inputBox:nth-child(2) > div > *:nth-child(2) {
+    width: 30%;
+    margin-left: 0.2rem;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0, 0);
+}
+.authBox svg {
+    width: 100%;
+    height: 100%;
+}
+.verifyAuth{
+    height: 100%!important;
+    background: #ffffff!important;
+}
+.active {
+    background: linear-gradient(rgba(111, 148, 232, 1), rgba(81, 120, 223, 1));
+}

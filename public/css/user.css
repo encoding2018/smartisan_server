@@ -1,0 +1,75 @@
+
+/*主体布局*/
+.floor1 {
+    margin-top: 0.3rem !important;
+}
+
+.floor1 > .top > a {
+    display: flex;
+    padding: 0.3rem;
+    align-items: center;
+    border-bottom: 0.01rem solid rgba(150, 150, 150, 0.2);
+}
+
+.floor1 > .top > a > div {
+
+}
+
+.floor1 > .top > a > div:nth-child(1) {
+    margin-right: 0.2rem;
+    flex-shrink: 0;
+}
+
+.floor1 > .top > a > div:nth-child(1) > div {
+    height: 1.2rem;
+    width: 1.2rem;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    background-image: url("/img/icon/icon_user_avatar.png");
+}
+
+.floor1 > .top > a > div:nth-child(2) {
+    font-size: 0.35rem;
+    color: #333333;
+    flex-grow: 1;
+}
+
+.floor1 > .top > a > div:nth-child(3) {
+    width: 0.15rem;
+    flex-shrink: 0;
+}
+
+.floor1 > .top > a > div:nth-child(3) > img {
+    width: 100%;
+}
+
+.floor1 > .bottom {
+    display: flex;
+}
+
+.floor1 > .bottom > div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem;
+    border-right: 0.01rem solid rgba(153, 153, 153, 0.2);
+}
+
+.floor1 > .bottom > div > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.floor1 > .bottom > div > a > img {
+    width: 0.35rem;
+    height: 0.35rem;
+}
+
+.floor1 > .bottom > div > a > p {
+    font-size: 0.22rem;
+    margin-top: 0.2rem;
+}

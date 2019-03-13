@@ -1,0 +1,208 @@
+/*js动态属性*/
+.downOrderActive {
+	background: linear-gradient(#6f94e8, #5178df) !important;
+}
+
+.removeActive {
+	background: linear-gradient(#db6962, #d0453d) !important;
+}
+
+.Info {
+	bottom: 2.5rem !important;
+}
+
+/*优惠券领取*/
+.floor1 {
+	position: fixed;
+	top: 1rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	background: #ffe7e5;
+	padding: 0.4rem 0.3rem;
+	box-shadow: inset 0 5px 13px rgba(0, 0, 0, .12), 0 5px 13px rgba(0, 0, 0, .12);
+}
+
+.floor1 > div:nth-child(1) {
+	width: 0.5rem;
+	flex-shrink: 0;
+	margin-right: 0.3rem;
+}
+
+.floor1 > div:nth-child(1) > img {
+	width: 100%;
+}
+
+.floor1 > div:nth-child(2) {
+	font-size: 0.3rem;
+	color: #d04f48;
+	font-weight: 700;
+	flex-grow: 1;
+}
+
+.floor1 > div:nth-child(3) {
+	width: 0.4rem;
+	flex-shrink: 0;
+}
+
+.floor1 > div:nth-child(3) > img {
+	width: 100%;
+}
+
+.showContent {
+	background: rgb(224, 224, 224);
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.showContent > div {
+	background: #ffffff;
+	margin-bottom: 0.15rem;
+}
+
+/*购物车商品显示*/
+.floor2 > .priceBox {
+	display: flex;
+	padding: 0.2rem 0.3rem;
+	align-items: center;
+}
+
+.floor2 > .priceBox > div:nth-child(2) {
+	flex-shrink: 0;
+}
+
+.floor2 > .priceBox > div:nth-child(2) > a > img {
+	width: 1.8rem;
+}
+
+.floor2 > .priceBox > div:nth-child(3) {
+	flex-grow: 1;
+}
+
+.floor2 > .priceBox > div:nth-child(3) > div {
+	margin-bottom: 0.1rem;
+}
+
+
+/*购物车菜单*/
+.footer {
+	box-shadow: 0 -10px 20px rgba(150, 150, 150, 0.3);
+}
+
+.cart-menu {
+	position: fixed;
+	width: calc(100% - 0.6rem);
+	bottom: 1rem;
+	display: flex;
+	height: 1rem;
+	padding: 0 0.3rem;
+	justify-content: space-between;
+	align-items: center;
+	background-image: linear-gradient(rgba(250, 250, 250, 1), rgba(150, 150, 150, 0.1));
+	box-shadow: 0 -0.1rem 0.2rem rgba(150, 150, 150, 0.2);
+}
+
+.cart-menu > div {
+
+}
+
+/*选择按钮*/
+.cart-menu > div:nth-child(1) {
+
+}
+
+.cart-menu > div:nth-child(1) > span {
+	display: block;
+	width: 0.32rem;
+	height: 0.32rem;
+	border-radius: 100%;
+	border: 0.05rem solid rgba(150, 150, 150, 0.2);
+}
+
+/*件数*/
+.cart-menu > div:nth-child(2) {
+	font-size: 0.26rem;
+	font-weight: 600;
+	color: rgb(153, 153, 153);
+	width: 1.5rem;
+	text-align: center;
+}
+
+.cart-menu > div:nth-child(2) > span:nth-child(2) {
+	font-weight: 700;
+	margin: 0 0.1rem;
+}
+
+/*合计*/
+.cart-menu > div:nth-child(3) {
+	font-size: 0.24rem;
+	color: rgb(212, 77, 68);
+	flex-grow: 1;
+}
+
+.cart-menu > div:nth-child(3) > p:first-child {
+	font-weight: 700;
+	margin-bottom: 0.1rem;
+}
+
+.cart-menu > div:nth-child(3) > p:first-child > span:first-child {
+	color: #666;
+}
+
+.cart-menu > div:nth-child(4) {
+	width: 1.8rem;
+	height: 0.8rem;
+	color: #eeeeee;
+	border-radius: 0.1rem;
+	text-align: center;
+	line-height: 0.8rem;
+	font-weight: 700;
+	font-size: 0.3rem;
+	background: linear-gradient(rgb(191, 191, 191), rgb(153, 153, 153));
+}
+
+/*空购物车*/
+.nullCart {
+	background: rgba(0, 0, 0, 0);
+	color: rgb(202, 202, 202);
+	font-size: 0.5rem;
+	width: 5rem;
+	margin: 2rem auto auto !important;
+	text-align: center;
+}
+
+.nullCart > * {
+	margin-bottom: 0.1rem;
+}
+
+.nullCart > div:nth-child(3) {
+	font-size: 0.28rem;
+}
+
+.nullCart > div:nth-child(4) {
+	margin-top: 0.2rem;
+	display: inline-block;
+	padding: 0.2rem 0.5rem;
+	border-radius: 0.1rem;
+	font-size: 0.28rem;
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.5);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/*购物车切换*/
+/*购物车加减*/
+.numBtn {
+	display: none;
+	padding: 0;
+	flex-grow: 1;
+}
+
+.floor2 .price {
+	display: flex;
+	align-items: center;
+}
+
+.textBox {
+	max-width: 100%;
+}

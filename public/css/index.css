@@ -1,0 +1,167 @@
+
+
+/*内容区域------*/
+
+
+/*banner*/
+.content .banner {
+    text-align: center;
+    padding-top: 2.5%;
+    background: #ffffff;
+
+}
+
+.content .banner .banner-img img {
+    width: 95%;
+}
+
+/*index-menu*/
+.content .banner .index-menu {
+    display: flex;
+    height: 2rem;
+    align-items: center;
+}
+
+.content .banner .index-menu .index-menu-bar {
+    flex-basis: 0;
+    flex-shrink: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.content .banner .index-menu .index-menu-bar img {
+    height: 0.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.content .banner .index-menu .index-menu-bar p {
+    color: #666;
+    font-size: 0.2rem;
+}
+
+/*海报展示*/
+.floor2 {
+    display: flex;
+    padding: 0.2rem;
+    background: #ffffff;
+}
+
+.floor2 > div {
+    flex-grow: 1;
+    flex-basis: 0;
+    flex-shrink: 0;
+}
+
+.floor2 > .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: .15rem;
+}
+
+.floor2 > .left > div > a > img {
+    width: 100%;
+}
+
+.floor2 > .right {
+    padding-left: .15rem;
+}
+
+.floor2 > .right > a > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+}
+
+/*通用模板css------------*/
+
+/*共用------*/
+
+
+/*共用模板*/
+/*templateOne------商品左右滑动*/
+.indexTemplateOne {
+    background: #ffffff;
+    color: #666;
+}
+
+
+/*---*/
+.indexTemplateOne > div:last-child {
+    display: flex;
+    overflow: scroll;
+}
+
+.indexTemplateOne > div:last-child > div {
+    width: 33.333%;
+    margin: 0 0.2rem;
+    flex-shrink: 0;
+}
+
+/*img---盒子*/
+.indexTemplateOne > div:last-child > div> a > div:first-child {
+    width: 100%;
+    padding-top: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    border: 0.01rem solid rgba(150, 150, 150, 0.3);
+}
+
+/*templateTwo------两列*/
+.indexTemplateTwo {
+    background: #ffffff;
+}
+
+.indexTemplateTwo > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.indexTemplateTwo > div:last-child > div {
+    padding: 0 0.2rem;
+    width: calc(50% - 0.4rem);
+}
+
+/*img-box*/
+.indexTemplateTwo > div:last-child > div > a > div:first-child {
+    border: 0.01rem solid rgba(150, 150, 150, 0.3);
+    width: 100%;
+    padding-top: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0.1rem;
+}
+
+/*bottomPoster*/
+.bottomPoster {
+    padding: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomPoster > div {
+    width: calc(50% - 0.6rem);
+    float: left;
+    flex-shrink: 0;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.bottomPoster > .left {
+    margin-right: 0.1rem;
+}
+
+.bottomPoster > .right {
+    margin-left: 0.1rem;
+}
+.bottomPoster > .right>div,
+.bottomPoster>.left>div {
+    margin-bottom: 0.15rem;
+}
+.bottomPoster > div > div > a > img {
+    height: 100%;
+    width: 100%;
+}

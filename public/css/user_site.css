@@ -1,0 +1,50 @@
+.siteBar {
+	background: #FFFFFF;
+	padding: 0.2rem 0.4rem ;
+	margin-bottom: 0.5rem;
+	border-bottom:0.01rem solid rgba(153,153,153,0.15) ;
+}
+.siteBar > div{
+	background: url("/img/icon/nextBtn.png") no-repeat center right ;
+	background-size: 0.7rem;
+}
+.siteBar > div > p:not(:last-child) {
+	margin-bottom: 0.2rem;
+}
+
+.siteBar > div > p:first-child {
+	font-size: 0.3rem;
+	color: #000000;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+}
+.siteBar > div > p:first-child>span:last-child {
+	font-size: 0.24rem;
+	font-weight: initial;
+	height: 100%;
+	display: inline-block;
+	padding: 0 0.1rem;
+	border: 1px solid #93b2f7;
+	color: #3965cc;
+	background: rgb(229,239,255);
+}
+.siteBar > div > p:last-child {
+	font-size: 0.24rem;
+	color: #666666;
+}
+
+.siteBar > div > p > span {
+	margin-right: 0.15rem;
+}
+/*添加地址*/
+
+.box .textBar{
+	background-image: linear-gradient(rgb(110, 152, 244), rgb(75, 119, 238));
+	border-radius: 0.1rem;
+	text-align: center;
+	font-size: 0.3rem;
+	font-weight: 700;
+	padding: 0.3rem;
+	color: #FFFFFF;
+}

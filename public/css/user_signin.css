@@ -1,0 +1,37 @@
+.content > * {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.content {
+    width: calc(100% - 0.6rem);
+    padding: 0.3rem;
+}
+
+/*输入框*/
+.inputBox > input:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+/*登录框*/
+.btnBox {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.28rem;
+    color: rgb(127,127,127);
+    padding: 0.2rem;
+}
+
+.btnBox > div:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.btnBox > div:first-child > div:first-child {
+    width: 0.6rem;
+}
+
+.btnBox > div:last-child > span:last-child {
+    margin-left: 0.5rem;
+    display: inline-block;
+}
